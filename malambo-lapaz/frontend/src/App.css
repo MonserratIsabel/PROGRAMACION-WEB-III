@@ -1,0 +1,100 @@
+/* Nueva paleta elegante */
+:root {
+  --black: #0a0a0a;
+  --dark: #111111;
+  --gold: #c9a03d;
+  --gold-light: #d4af37;
+  --gold-dark: #8b6914;
+  --white: #ffffff;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Efectos de hover */
+.btn-gold, .btn-outline-gold, .glass-card, .clase-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scrollbar elegante */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 4px;
+}
+/* Estilos elegantes */
+.btn-gold {
+  background: #c9a03d;
+  padding: 12px 35px;
+  border-radius: 30px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-gold:hover {
+  background: #d4af37;
+  transform: translateY(-3px);
+  color: #000;
+}
+
+.btn-outline-gold {
+  background: transparent;
+  border: 1.5px solid #c9a03d;
+  padding: 12px 35px;
+  border-radius: 30px;
+  color: #c9a03d;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-outline-gold:hover {
+  background: #c9a03d;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+.glass-card, .clase-card, .producto-card, .evento-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover, .clase-card:hover, .producto-card:hover, .evento-card:hover {
+  transform: translateY(-10px);
+  border-color: #c9a03d !important;
+}
+
+/* Animación fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Modal personalizado */
+.modal-content {
+  background: transparent;
+  border: none;
+}
+
+.modal-header .btn-close {
+  filter: invert(1);
+}
